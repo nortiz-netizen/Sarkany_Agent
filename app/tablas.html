@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tablas VTEX - Conocimiento Interno y Atributos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      line-height: 1.4;
+      margin: 20px;
+    }
+    h1, h2 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+    th, td {
+      border: 1px solid #cccccc;
+      padding: 4px 6px;
+      vertical-align: top;
+    }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      text-align: left;
+    }
+    caption {
+      font-weight: bold;
+      margin-bottom: 6px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Base de conocimiento VTEX - Personal Shopper</h1>
+
+  <h2>TABLA 1 — Conocimiento interno (NO mostrar al usuario)</h2>
+  <p><strong>Columnas:</strong> Categoría | Ocasión | Outfit sugerido | Accesorios sugeridos | Tendencia / nota</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Categoría</th>
+        <th>Ocasión</th>
+        <th>Outfit sugerido</th>
+        <th>Accesorios sugeridos</th>
+        <th>Tendencia / nota</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Zapatillas -->
+      <tr>
+        <td>Zapatillas</td>
+        <td>Casual</td>
+        <td>Zapatillas en tonos neutros con jeans o vestidos estampados</td>
+        <td>Cartera bandolera, perfume floral fresco</td>
+        <td>Tendencia SS26: metalizados y esferas</td>
+      </tr>
+      <tr>
+        <td>Zapatillas</td>
+        <td>Trabajo</td>
+        <td>Zapatillas en cuero negro o marrón con prendas de sastrería</td>
+        <td>Cartera shopper, cinturón fino, perfume elegante</td>
+        <td>Look formal con toques metalizados sutiles</td>
+      </tr>
+      <tr>
+        <td>Zapatillas</td>
+        <td>Evento de noche</td>
+        <td>Zapatillas doradas, acrílicas o con brillos combinadas con vestidos oscuros</td>
+        <td>Clutch metálico, aros llamativos, perfume nocturno intenso</td>
+        <td>Acrílico y brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Zapatillas</td>
+        <td>Fiesta</td>
+        <td>Glitter o colores vibrantes con vestidos cortos</td>
+        <td>Mini bag con brillos, brazaletes metálicos, perfume edición especial</td>
+        <td>Brillos y esferas SS26</td>
+      </tr>
+      <tr>
+        <td>Zapatillas</td>
+        <td>Salir a bailar</td>
+        <td>Base ancha o plataforma con outfits metálicos</td>
+        <td>Riñonera tendencia, argollas grandes, perfume audaz</td>
+        <td>Plataformas noche SS26</td>
+      </tr>
+      <tr>
+        <td>Zapatillas</td>
+        <td>Viaje</td>
+        <td>Zapatillas planas y cómodas con shorts o lino</td>
+        <td>Mochila pequeña, sombrero de rafia, perfume travel size</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Artesanales -->
+      <tr>
+        <td>Artesanales</td>
+        <td>Casual</td>
+        <td>Artesanales en tonos neutros con jeans o vestidos estampados</td>
+        <td>Cartera bandolera, perfume floral fresco</td>
+        <td>Tendencia SS26: metalizados y esferas</td>
+      </tr>
+      <tr>
+        <td>Artesanales</td>
+        <td>Trabajo</td>
+        <td>Artesanales en cuero negro o marrón con prendas de sastrería</td>
+        <td>Cartera shopper, cinturón fino, perfume elegante</td>
+        <td>Look formal con toques metalizados sutiles</td>
+      </tr>
+      <tr>
+        <td>Artesanales</td>
+        <td>Evento de noche</td>
+        <td>Artesanales dorados, acrílicos o con brillos con vestidos oscuros</td>
+        <td>Clutch metálico, aros llamativos, perfume nocturno intenso</td>
+        <td>Acrílico y brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Artesanales</td>
+        <td>Fiesta</td>
+        <td>Glitter o colores vibrantes con vestidos cortos</td>
+        <td>Mini bag con brillos, brazaletes metálicos, perfume edición especial</td>
+        <td>Brillos y esferas SS26</td>
+      </tr>
+      <tr>
+        <td>Artesanales</td>
+        <td>Salir a bailar</td>
+        <td>Base ancha o plataforma con outfits metálicos</td>
+        <td>Riñonera tendencia, argollas grandes, perfume audaz</td>
+        <td>Plataformas noche SS26</td>
+      </tr>
+      <tr>
+        <td>Artesanales</td>
+        <td>Viaje</td>
+        <td>Artesanales planas y cómodas con shorts o lino</td>
+        <td>Mochila pequeña, sombrero de rafia, perfume travel size</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Sandalias -->
+      <tr>
+        <td>Sandalias</td>
+        <td>Casual</td>
+        <td>Tonos neutros con jeans o vestidos estampados</td>
+        <td>Cartera bandolera, perfume floral fresco</td>
+        <td>Metalizados y esferas SS26</td>
+      </tr>
+      <tr>
+        <td>Sandalias</td>
+        <td>Trabajo</td>
+        <td>Cuero negro o marrón con prendas de sastrería</td>
+        <td>Cartera shopper, cinturón fino, perfume elegante</td>
+        <td>Look formal metalizado</td>
+      </tr>
+      <tr>
+        <td>Sandalias</td>
+        <td>Evento de noche</td>
+        <td>Doradas, acrílicas o con brillos</td>
+        <td>Clutch metálico, aros llamativos, perfume intenso</td>
+        <td>Acrílico y brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Sandalias</td>
+        <td>Fiesta</td>
+        <td>Glitter o colores vibrantes</td>
+        <td>Mini bag con brillos, brazaletes metálicos, perfume edición especial</td>
+        <td>Brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Sandalias</td>
+        <td>Salir a bailar</td>
+        <td>Base ancha o plataforma con outfits metálicos</td>
+        <td>Riñonera tendencia, argollas grandes, perfume audaz</td>
+        <td>Plataformas noche SS26</td>
+      </tr>
+      <tr>
+        <td>Sandalias</td>
+        <td>Viaje</td>
+        <td>Sandalias planas o cómodas con shorts o lino</td>
+        <td>Mochila pequeña, sombrero de rafia, perfume travel size</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Zuecos -->
+      <tr>
+        <td>Zuecos</td>
+        <td>Casual</td>
+        <td>Neutros con jeans o vestidos estampados</td>
+        <td>Cartera bandolera, perfume floral fresco</td>
+        <td>Tendencia metalizados y esferas</td>
+      </tr>
+      <tr>
+        <td>Zuecos</td>
+        <td>Trabajo</td>
+        <td>Cuero negro o marrón con prendas de sastrería</td>
+        <td>Cartera shopper, cinturón fino, perfume elegante</td>
+        <td>Look formal metalizado</td>
+      </tr>
+      <tr>
+        <td>Zuecos</td>
+        <td>Evento de noche</td>
+        <td>Dorados, acrílicos o brillantes</td>
+        <td>Clutch metálico, aros llamativos, perfume intenso</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Zuecos</td>
+        <td>Fiesta</td>
+        <td>Glitter o colores vibrantes</td>
+        <td>Mini bag con brillos, brazaletes</td>
+        <td>Brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Zuecos</td>
+        <td>Salir a bailar</td>
+        <td>Base ancha con outfits metálicos</td>
+        <td>Riñonera tendencia, argollas grandes, perfume audaz</td>
+        <td>Plataformas SS26</td>
+      </tr>
+      <tr>
+        <td>Zuecos</td>
+        <td>Viaje</td>
+        <td>Planos o cómodos con shorts o lino</td>
+        <td>Mochila pequeña, sombrero de rafia</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Plataformas -->
+      <tr>
+        <td>Plataformas</td>
+        <td>Casual</td>
+        <td>Neutros con jeans o vestidos</td>
+        <td>Bandolera, perfume floral fresco</td>
+        <td>Tendencia SS26</td>
+      </tr>
+      <tr>
+        <td>Plataformas</td>
+        <td>Trabajo</td>
+        <td>Cuero negro/marrón con sastrería</td>
+        <td>Shopper, cinturón fino, perfume elegante</td>
+        <td>Estilo formal metalizado</td>
+      </tr>
+      <tr>
+        <td>Plataformas</td>
+        <td>Evento de noche</td>
+        <td>Doradas, acrílicas o con brillos</td>
+        <td>Clutch metálico, perfume intenso</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Plataformas</td>
+        <td>Fiesta</td>
+        <td>Glitter o colores vibrantes</td>
+        <td>Mini bag, brazaletes metálicos</td>
+        <td>Brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Plataformas</td>
+        <td>Salir a bailar</td>
+        <td>Base ancha con outfits metálicos</td>
+        <td>Riñonera, argollas, perfume audaz</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Plataformas</td>
+        <td>Viaje</td>
+        <td>Cómodas con shorts o lino</td>
+        <td>Mochila pequeña, perfume travel</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Sale -->
+      <tr>
+        <td>Sale</td>
+        <td>Casual</td>
+        <td>Tonos neutros con jeans</td>
+        <td>Bandolera, perfume fresco</td>
+        <td>SS26 metalizados</td>
+      </tr>
+      <tr>
+        <td>Sale</td>
+        <td>Trabajo</td>
+        <td>Cuero clásico + sastrería</td>
+        <td>Shopper + perfume elegante</td>
+        <td>Formal SS26</td>
+      </tr>
+      <tr>
+        <td>Sale</td>
+        <td>Evento de noche</td>
+        <td>Dorado/acrílico/brillos</td>
+        <td>Clutch metálico</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Sale</td>
+        <td>Fiesta</td>
+        <td>Glitter + vestidos cortos</td>
+        <td>Mini bag + brazaletes</td>
+        <td>Brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Sale</td>
+        <td>Salir a bailar</td>
+        <td>Plataformas + metalizados</td>
+        <td>Riñonera + accesorios</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Sale</td>
+        <td>Viaje</td>
+        <td>Planas + lino</td>
+        <td>Mochila pequeña</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Botas & Botinetas -->
+      <tr>
+        <td>Botas &amp; Botinetas</td>
+        <td>Casual</td>
+        <td>Neutros con jeans/vestidos</td>
+        <td>Bandolera + perfume fresco</td>
+        <td>Metalizados SS26</td>
+      </tr>
+      <tr>
+        <td>Botas &amp; Botinetas</td>
+        <td>Trabajo</td>
+        <td>Cuero negro/marrón + sastrería</td>
+        <td>Shopper + perfume elegante</td>
+        <td>Formal metalizado</td>
+      </tr>
+      <tr>
+        <td>Botas &amp; Botinetas</td>
+        <td>Evento de noche</td>
+        <td>Dorado/acrílico/brillos</td>
+        <td>Clutch metálico + perfume</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Botas &amp; Botinetas</td>
+        <td>Fiesta</td>
+        <td>Glitter o colores vivos</td>
+        <td>Mini bag + brazaletes</td>
+        <td>Brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Botas &amp; Botinetas</td>
+        <td>Salir a bailar</td>
+        <td>Plataforma + metalizados</td>
+        <td>Riñonera + perfume</td>
+        <td>Tendencia SS26</td>
+      </tr>
+      <tr>
+        <td>Botas &amp; Botinetas</td>
+        <td>Viaje</td>
+        <td>Cómodas + lino</td>
+        <td>Mochila pequeña</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Pretemporada -->
+      <tr>
+        <td>Pretemporada</td>
+        <td>Casual</td>
+        <td>Neutros con jeans</td>
+        <td>Bandolera, perfume fresco</td>
+        <td>SS26</td>
+      </tr>
+      <tr>
+        <td>Pretemporada</td>
+        <td>Trabajo</td>
+        <td>Cuero + sastrería</td>
+        <td>Shopper + perfume elegante</td>
+        <td>Formal metalizado</td>
+      </tr>
+      <tr>
+        <td>Pretemporada</td>
+        <td>Evento de noche</td>
+        <td>Dorado/acrílico/brillos</td>
+        <td>Clutch metálico</td>
+        <td>Brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Pretemporada</td>
+        <td>Fiesta</td>
+        <td>Glitter + vestidos</td>
+        <td>Mini bag + brazaletes</td>
+        <td>Fiesta SS26</td>
+      </tr>
+      <tr>
+        <td>Pretemporada</td>
+        <td>Salir a bailar</td>
+        <td>Plataforma + metalizados</td>
+        <td>Riñonera + perfume</td>
+        <td>Tendencia noche</td>
+      </tr>
+      <tr>
+        <td>Pretemporada</td>
+        <td>Viaje</td>
+        <td>Cómodas + lino</td>
+        <td>Mochila + perfume travel</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Stilettos -->
+      <tr>
+        <td>Stilettos</td>
+        <td>Casual</td>
+        <td>Neutros con jeans/vestidos</td>
+        <td>Bandolera + perfume fresco</td>
+        <td>Elegancia SS26</td>
+      </tr>
+      <tr>
+        <td>Stilettos</td>
+        <td>Trabajo</td>
+        <td>Negro/marrón + sastrería</td>
+        <td>Shopper + perfume elegante</td>
+        <td>Formal SS26</td>
+      </tr>
+      <tr>
+        <td>Stilettos</td>
+        <td>Evento de noche</td>
+        <td>Dorado/acrílico/brillos</td>
+        <td>Clutch metálico + perfume intenso</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Stilettos</td>
+        <td>Fiesta</td>
+        <td>Glitter/colores vivos</td>
+        <td>Mini bag + brazaletes</td>
+        <td>Glam SS26</td>
+      </tr>
+      <tr>
+        <td>Stilettos</td>
+        <td>Salir a bailar</td>
+        <td>Plataforma + metalizados</td>
+        <td>Riñonera + perfume</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Stilettos</td>
+        <td>Viaje</td>
+        <td>Bajas y cómodas</td>
+        <td>Mochila + perfume travel</td>
+        <td>Minimal chic</td>
+      </tr>
+
+      <!-- Mocasines -->
+      <tr>
+        <td>Mocasines</td>
+        <td>Casual</td>
+        <td>Neutros + jeans</td>
+        <td>Bandolera + perfume fresco</td>
+        <td>SS26</td>
+      </tr>
+      <tr>
+        <td>Mocasines</td>
+        <td>Trabajo</td>
+        <td>Cuero + sastrería</td>
+        <td>Shopper + perfume elegante</td>
+        <td>Formal SS26</td>
+      </tr>
+      <tr>
+        <td>Mocasines</td>
+        <td>Evento de noche</td>
+        <td>Dorado/brillos</td>
+        <td>Clutch metálico</td>
+        <td>Noche SS26</td>
+      </tr>
+      <tr>
+        <td>Mocasines</td>
+        <td>Fiesta</td>
+        <td>Glitter/colores vivos</td>
+        <td>Mini bag + brazaletes</td>
+        <td>Fiesta SS26</td>
+      </tr>
+      <tr>
+        <td>Mocasines</td>
+        <td>Salir a bailar</td>
+        <td>Suela ancha + metalizados</td>
+        <td>Accesorios metálicos</td>
+        <td>SS26</td>
+      </tr>
+      <tr>
+        <td>Mocasines</td>
+        <td>Viaje</td>
+        <td>Cómodos + lino</td>
+        <td>Mochila + perfume travel</td>
+        <td>Chic</td>
+      </tr>
+
+      <!-- Ballerinas -->
+      <tr>
+        <td>Ballerinas</td>
+        <td>Casual</td>
+        <td>Neutros</td>
+        <td>Bandolera + perfume fresco</td>
+        <td>Fem SS26</td>
+      </tr>
+      <tr>
+        <td>Ballerinas</td>
+        <td>Trabajo</td>
+        <td>Negro/marrón + sastrería</td>
+        <td>Shopper + perfume elegante</td>
+        <td>Oficina SS26</td>
+      </tr>
+      <tr>
+        <td>Ballerinas</td>
+        <td>Evento de noche</td>
+        <td>Dorado/acrílico</td>
+        <td>Clutch + perfume</td>
+        <td>Elegante SS26</td>
+      </tr>
+      <tr>
+        <td>Ballerinas</td>
+        <td>Fiesta</td>
+        <td>Glitter/colores</td>
+        <td>Mini bag</td>
+        <td>Brillos SS26</td>
+      </tr>
+      <tr>
+        <td>Ballerinas</td>
+        <td>Salir a bailar</td>
+        <td>Plataforma baja</td>
+        <td>Accesorios metálicos</td>
+        <td>Trendy</td>
+      </tr>
+      <tr>
+        <td>Ballerinas</td>
+        <td>Viaje</td>
+        <td>Comodidad total</td>
+        <td>Mochila + perfume travel</td>
+        <td>Chic</td>
+      </tr>
+
+      <!-- Hombre -->
+      <tr>
+        <td>Hombre</td>
+        <td>Casual</td>
+        <td>Neutros + jeans</td>
+        <td>Bandolera</td>
+        <td>Moderno</td>
+      </tr>
+      <tr>
+        <td>Hombre</td>
+        <td>Trabajo</td>
+        <td>Cuero + sastrería</td>
+        <td>Shopper</td>
+        <td>Formal</td>
+      </tr>
+      <tr>
+        <td>Hombre</td>
+        <td>Evento de noche</td>
+        <td>Brillos</td>
+        <td>Clutch</td>
+        <td>Noche</td>
+      </tr>
+      <tr>
+        <td>Hombre</td>
+        <td>Fiesta</td>
+        <td>Vibrantes</td>
+        <td>Mini bag</td>
+        <td>Trendy</td>
+      </tr>
+      <tr>
+        <td>Hombre</td>
+        <td>Salir a bailar</td>
+        <td>Plataformas</td>
+        <td>Accesorios</td>
+        <td>Noche</td>
+      </tr>
+      <tr>
+        <td>Hombre</td>
+        <td>Viaje</td>
+        <td>Livianos</td>
+        <td>Mochila</td>
+        <td>Cómodo</td>
+      </tr>
+
+      <!-- Zapatos -->
+      <tr>
+        <td>Zapatos</td>
+        <td>Casual</td>
+        <td>Neutros</td>
+        <td>Bandolera</td>
+        <td>SS26</td>
+      </tr>
+      <tr>
+        <td>Zapatos</td>
+        <td>Trabajo</td>
+        <td>Cuero + sastrería</td>
+        <td>Shopper</td>
+        <td>Formal</td>
+      </tr>
+      <tr>
+        <td>Zapatos</td>
+        <td>Evento de noche</td>
+        <td>Brillos</td>
+        <td>Clutch</td>
+        <td>Elegante</td>
+      </tr>
+      <tr>
+        <td>Zapatos</td>
+        <td>Fiesta</td>
+        <td>Vibrantes</td>
+        <td>Mini bag</td>
+        <td>Brillos</td>
+      </tr>
+      <tr>
+        <td>Zapatos</td>
+        <td>Salir a bailar</td>
+        <td>Plataforma</td>
+        <td>Accesorios metálicos</td>
+        <td>Noche</td>
+      </tr>
+      <tr>
+        <td>Zapatos</td>
+        <td>Viaje</td>
+        <td>Cómodos</td>
+        <td>Mochila</td>
+        <td>Chic</td>
+      </tr>
+
+      <!-- Carteras -->
+      <tr>
+        <td>Carteras</td>
+        <td>Casual</td>
+        <td>Neutras</td>
+        <td>Bandolera</td>
+        <td>SS26</td>
+      </tr>
+      <tr>
+        <td>Carteras</td>
+        <td>Trabajo</td>
+        <td>Shopper</td>
+        <td>Accesorios elegantes</td>
+        <td>Formal</td>
+      </tr>
+      <tr>
+        <td>Carteras</td>
+        <td>Evento de noche</td>
+        <td>Metallic</td>
+        <td>Clutch</td>
+        <td>Glam</td>
+      </tr>
+      <tr>
+        <td>Carteras</td>
+        <td>Fiesta</td>
+        <td>Glitter</td>
+        <td>Mini bag</td>
+        <td>Trendy</td>
+      </tr>
+      <tr>
+        <td>Carteras</td>
+        <td>Salir a bailar</td>
+        <td>Bold</td>
+        <td>Accesorios metálicos</td>
+        <td>Noche</td>
+      </tr>
+      <tr>
+        <td>Carteras</td>
+        <td>Viaje</td>
+        <td>Cómoda</td>
+        <td>Mochila</td>
+        <td>Travel</td>
+      </tr>
+
+      <!-- Billeteras -->
+      <tr>
+        <td>Billeteras</td>
+        <td>Casual</td>
+        <td>Neutras</td>
+        <td>Bandolera</td>
+        <td>SS26</td>
+      </tr>
+      <tr>
+        <td>Billeteras</td>
+        <td>Trabajo</td>
+        <td>Cuero</td>
+        <td>Shopper</td>
+        <td>Formal</td>
+      </tr>
+      <tr>
+        <td>Billeteras</td>
+        <td>Evento de noche</td>
+        <td>Metallic</td>
+        <td>Clutch</td>
+        <td>Glam</td>
+      </tr>
+      <tr>
+        <td>Billeteras</td>
+        <td>Fiesta</td>
+        <td>Glitter</td>
+        <td>Mini bag</td>
+        <td>Trendy</td>
+      </tr>
+      <tr>
+        <td>Billeteras</td>
+        <td>Salir a bailar</td>
+        <td>Plataforma</td>
+        <td>Accesorios</td>
+        <td>Noche</td>
+      </tr>
+      <tr>
+        <td>Billeteras</td>
+        <td>Viaje</td>
+        <td>Cómoda</td>
+        <td>Mochila</td>
+        <td>Travel</td>
+      </tr>
+
+      <!-- Llaveros -->
+      <tr>
+        <td>Llaveros</td>
+        <td>Casual</td>
+        <td>Neutros</td>
+        <td>Bandolera</td>
+        <td>Lifestyle</td>
+      </tr>
+      <tr>
+        <td>Llaveros</td>
+        <td>Trabajo</td>
+        <td>Cuero</td>
+        <td>Shopper</td>
+        <td>Formal</td>
+      </tr>
+      <tr>
+        <td>Llaveros</td>
+        <td>Evento de noche</td>
+        <td>Metallic</td>
+        <td>Clutch</td>
+        <td>Elegante</td>
+      </tr>
+      <tr>
+        <td>Llaveros</td>
+        <td>Fiesta</td>
+        <td>Glitter</td>
+        <td>Mini bag</td>
+        <td>Trendy</td>
+      </tr>
+      <tr>
+        <td>Llaveros</td>
+        <td>Salir a bailar</td>
+        <td>Bold</td>
+        <td>Accesorios metálicos</td>
+        <td>Noche</td>
+      </tr>
+      <tr>
+        <td>Llaveros</td>
+        <td>Viaje</td>
+        <td>Cómodos</td>
+        <td>Mochila</td>
+        <td>Chic</td>
+      </tr>
+
+      <!-- Gorras -->
+      <tr>
+        <td>Gorras</td>
+        <td>Casual</td>
+        <td>Neutras</td>
+        <td>Bandolera</td>
+        <td>SS26</td>
+      </tr>
+      <tr>
+        <td>Gorras</td>
+        <td>Trabajo</td>
+        <td>Sastrería</td>
+        <td>Shopper</td>
+        <td>Elegante</td>
+      </tr>
+      <tr>
+        <td>Gorras</td>
+        <td>Evento de noche</td>
+        <td>Metallic</td>
+        <td>Clutch</td>
+        <td>Noche</td>
+      </tr>
+      <tr>
+        <td>Gorras</td>
+        <td>Fiesta</td>
+        <td>Brillantes</td>
+        <td>Mini bag</td>
+        <td>Trendy</td>
+      </tr>
+      <tr>
+        <td>Gorras</td>
+        <td>Salir a bailar</td>
+        <td>Plataformas</td>
+        <td>Accesorios metálicos</td>
+        <td>Noche</td>
+      </tr>
+      <tr>
+        <td>Gorras</td>
+        <td>Viaje</td>
+        <td>Livianas</td>
+        <td>Mochila</td>
+        <td>Travel</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>TABLA 2 — Atributos por categoría</h2>
+  <p><strong>Columnas:</strong> Categoría | Estilo | Ocasión | Altura | Material | Temporada | Keywords</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Categoría</th>
+        <th>Estilo</th>
+        <th>Ocasión</th>
+        <th>Altura</th>
+        <th>Material</th>
+        <th>Temporada</th>
+        <th>Keywords</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Botas</td>
+        <td>Texanas, atemporales, versátiles</td>
+        <td>Día/noche</td>
+        <td>Media/alta</td>
+        <td>Cuero, gamuza</td>
+        <td>Todo el año</td>
+        <td>botas, texanas, bucaneras, cómodas, versátiles</td>
+      </tr>
+      <tr>
+        <td>Botinetas</td>
+        <td>Urbanas, cancheras</td>
+        <td>Día/noche/oficina</td>
+        <td>Media</td>
+        <td>Cuero, gamuza</td>
+        <td>Verano/entretiempo</td>
+        <td>botinetas, urbanas, look de noche, versátil</td>
+      </tr>
+      <tr>
+        <td>Sandalias</td>
+        <td>Inyectadas, plataforma, taco alto</td>
+        <td>Día/noche/playa/evento</td>
+        <td>Baja/alta</td>
+        <td>Goma, cuero</td>
+        <td>Verano</td>
+        <td>sandalia, tendencia, fresca, liviana, cómoda</td>
+      </tr>
+      <tr>
+        <td>Zapatillas</td>
+        <td>Plataforma, tendencia, coloridas</td>
+        <td>Diario/urbano/street</td>
+        <td>Baja/alta</td>
+        <td>Cuero, lona</td>
+        <td>Todo el año</td>
+        <td>sneakers, plataforma, urbana, color block, trendy</td>
+      </tr>
+      <tr>
+        <td>Sarkany ID</td>
+        <td>Personalizable</td>
+        <td>Diario/urbano/regalo</td>
+        <td>Variable</td>
+        <td>Cuero, lona</td>
+        <td>Todo el año</td>
+        <td>personalizada, grabado, única, custom</td>
+      </tr>
+      <tr>
+        <td>Plataformas</td>
+        <td>Altura/taco</td>
+        <td>Fiesta/noche/urbano</td>
+        <td>Baja/media/alta</td>
+        <td>Cuero, goma</td>
+        <td>Verano</td>
+        <td>plataformas, fiesta, taco alto</td>
+      </tr>
+      <tr>
+        <td>Stilettos</td>
+        <td>Elegantes, clásicos</td>
+        <td>Evento/noche</td>
+        <td>Alta</td>
+        <td>Cuero, charol</td>
+        <td>Todo el año</td>
+        <td>stilettos, sofisticado, elegante</td>
+      </tr>
+      <tr>
+        <td>Zuecos</td>
+        <td>Cómodos, trendy</td>
+        <td>Casual/verano</td>
+        <td>Media/alta</td>
+        <td>Cuero, madera</td>
+        <td>Verano</td>
+        <td>zuecos, frescos, trendy</td>
+      </tr>
+      <tr>
+        <td>Balerinas</td>
+        <td>Cómodas, femeninas</td>
+        <td>Diario/oficina</td>
+        <td>Baja</td>
+        <td>Cuero, lona</td>
+        <td>Todo el año</td>
+        <td>ballerinas, chatas, elegantes</td>
+      </tr>
+      <tr>
+        <td>Zapatos Artesanales</td>
+        <td>Hechos a mano</td>
+        <td>Evento/especial</td>
+        <td>Variable</td>
+        <td>Cuero, napa, gamuza</td>
+        <td>Todo el año</td>
+        <td>artesanal, lujo, detalle</td>
+      </tr>
+      <tr>
+        <td>Sandalias Artesanales</td>
+        <td>Natural</td>
+        <td>Verano/día</td>
+        <td>Baja/media</td>
+        <td>Cuero, yute</td>
+        <td>Verano</td>
+        <td>artesanal, natural, verano</td>
+      </tr>
+      <tr>
+        <td>Carteras</td>
+        <td>Shopper, mini, bandolera</td>
+        <td>Diario/trabajo/noche</td>
+        <td>—</td>
+        <td>Cuero, ecocuero</td>
+        <td>Todo el año</td>
+        <td>cartera, bolso, bandolera, shopper</td>
+      </tr>
+      <tr>
+        <td>Accesorios</td>
+        <td>Lifestyle</td>
+        <td>Diario/regalo/evento</td>
+        <td>—</td>
+        <td>Cuero, acrílico, metal, tela</td>
+        <td>Todo el año</td>
+        <td>billetera, gorra, llavero, anteojos, perfume</td>
+      </tr>
+      <tr>
+        <td>Perfumes</td>
+        <td>Día/noche</td>
+        <td>Diario/especial/regalo</td>
+        <td>—</td>
+        <td>Fragancia</td>
+        <td>Todo el año</td>
+        <td>perfume, aroma, fragancia</td>
+      </tr>
+      <tr>
+        <td>Anteojos</td>
+        <td>Modernos, funcionales</td>
+        <td>Diario/urbano</td>
+        <td>—</td>
+        <td>Acetato, metal</td>
+        <td>Todo el año</td>
+        <td>anteojos, lentes, gafas</td>
+      </tr>
+      <tr>
+        <td>Les Artisans</td>
+        <td>Lujo artesanal</td>
+        <td>Evento/especial</td>
+        <td>Variable</td>
+        <td>Cuero, napa, gamuza</td>
+        <td>Todo el año</td>
+        <td>artesanal, lujo</td>
+      </tr>
+      <tr>
+        <td>Hombre</td>
+        <td>Urbanos, clásicos</td>
+        <td>Diario/urbano</td>
+        <td>Variable</td>
+        <td>Cuero, lona</td>
+        <td>Todo el año</td>
+        <td>hombre, zapato, zapatilla</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

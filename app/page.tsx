@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu } from "lucide-react"
+import AgentforceChat from "@/components/ui/AgentforceChat"
 
 export default function Home() {
   return (
@@ -295,6 +296,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* 👇 Botón + script del agente */}
+      <AgentforceChat />
     </div>
   )
 }
