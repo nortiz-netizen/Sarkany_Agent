@@ -1,119 +1,71 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
-// =======================
-//   FIX DE TYPESCRIPT
-// =======================
+export default function AgentforceChat() {
+  const loadedRef = useRef(false)
+
+  useEffect(() => {
+    // 1. Evitar que se ejecute en el servidor (SSR)
+    if (typeof window === 'undefined') return
+
+    // 2. Evitar carga doble si el componente se remonta
+    if (loadedRef.current) return
+    loadedRef.current = true
+
+    // 3. Crear y cargar el script de Salesforce
+    const script = document.createElement('script')
+    script.src = 'https://sarkany.my.site.com/ESWAgentforceSarkany1768332702039/assets/js/bootstrap.min.js'
+    script.type = 'text/javascript'
+    script.async = true
+
+    script.onload = () => {
+      try {
+        // Asegurarnos que el objeto existe
+        if (!window.embeddedservice_bootstrap) {
+          console.error('Error: embeddedservice_bootstrap no encontrado')
+          return
+        }
+
+        // 4. Configuración (Igual a tu snippet)
+        window.embeddedservice_bootstrap.settings.language = 'es_MX'
+
+        // 5. Inicialización (Tus nuevas credenciales)
+        window.embeddedservice_bootstrap.init(
+          '00Da500001QRvxI',
+          'Agentforce_Sarkany',
+          'https://sarkany.my.site.com/ESWAgentforceSarkany1768332702039',
+          {
+            scrt2URL: 'https://sarkany.my.salesforce-scrt.com'
+          }
+        )
+      } catch (err) {
+        console.error('Error loading Embedded Messaging: ', err)
+      }
+    }
+
+    document.body.appendChild(script)
+  }, [])
+
+  // No renderizamos nada visual, Salesforce inyectará su propio botón flotante
+  return null
+}
+
+// ==========================================
+// DEFINICIÓN DE TIPOS (Para evitar errores TS)
+// ==========================================
 declare global {
   interface Window {
-    __SARKANY_ESW_LOADED__?: boolean
     embeddedservice_bootstrap?: {
-      settings?: {
+      settings: {
         language?: string
-        hideChatButtonOnLoad?: boolean
-        chatButtonPosition?: string
       }
-      init?: (
+      init: (
         orgId: string,
         depName: string,
         url: string,
         options: { scrt2URL: string }
       ) => void
-      utilAPI?: {
-        launchChat?: () => void
-      }
     }
   }
-}
-
-export default function AgentforceChat() {
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-
-    // Evitar cargas duplicadas
-    if (window.__SARKANY_ESW_LOADED__) return
-    window.__SARKANY_ESW_LOADED__ = true
-
-    const bootstrapScript = document.createElement('script')
-    // 1. NUEVA URL DEL SCRIPT
-    bootstrapScript.src =
-      'https://sarkany.my.site.com/ESWAgentforceSarkany1768332702039/assets/js/bootstrap.min.js'
-    bootstrapScript.type = 'text/javascript'
-
-    bootstrapScript.onload = () => {
-      try {
-        const esw = window.embeddedservice_bootstrap
-        if (!esw) {
-          console.error('No se encontró embeddedservice_bootstrap')
-          return
-        }
-
-        // Configuración (Mantenemos esto para que funcione tu Sidebar)
-        esw.settings = esw.settings || {}
-        esw.settings.language = 'es_MX'
-        esw.settings.hideChatButtonOnLoad = true
-        esw.settings.chatButtonPosition = '25px,-9999px' // esconder launcher original
-
-        // 2. INICIALIZAR CON LAS NUEVAS CREDENCIALES
-        esw.init?.(
-          '00Da500001QRvxI', // Nuevo Org ID
-          'Agentforce_Sarkany', // Nombre del Deployment
-          'https://sarkany.my.site.com/ESWAgentforceSarkany1768332702039', // Nueva URL Base
-          {
-            scrt2URL: 'https://sarkany.my.salesforce-scrt.com' // Nueva URL SCRT2
-          }
-        )
-      } catch (err) {
-        console.error('Error inicializando ESW:', err)
-      }
-    }
-
-    document.body.appendChild(bootstrapScript)
-  }, [])
-
-  // Sidebar donde se montará el chat (UI Mantenida)
-  return (
-    <>
-      <div id="agentforce-sidebar"></div>
-
-      <style jsx global>{`
-        /* ==== SIDEBAR ==== */
-        #agentforce-sidebar {
-          position: fixed;
-          top: 0;
-          right: 0;
-          width: 380px;
-          height: 100vh;
-          background: #fff;
-          border-left: 1px solid #ddd;
-          z-index: 9999;
-          overflow: hidden;
-
-          transform: translateX(100%);
-          opacity: 0;
-          transition: all 0.45s ease;
-        }
-
-        /* Sidebar abierto */
-        body.esw-open #agentforce-sidebar {
-          transform: translateX(0%);
-          opacity: 1;
-        }
-
-        /* Ajustar iframe del chat */
-        #agentforce-sidebar iframe,
-        #agentforce-sidebar .embeddedMessagingFrame {
-          width: 100% !important;
-          height: 100% !important;
-          border: none !important;
-        }
-
-        /* Ocultar launcher original */
-        #embeddedMessagingLauncher {
-          display: none !important;
-        }
-      `}</style>
-    </>
-  )
 }
